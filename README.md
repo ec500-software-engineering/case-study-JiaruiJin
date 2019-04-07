@@ -18,7 +18,10 @@ Android Studio: While you can use any editor of your choice to develop your app,
 How are they ensuring the testing is meaningful? Do they have code coverage metrics for example?  
 What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?    
 What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang
-## Software architecture in your own words, including:
+## Software Architecture
+### Software Architecture Diagram  
+![Architecture](https://github.com/ec500-software-engineering/case-study-JiaruiJin/blob/master/Structure.PNG)  
+
 ## Analyze two defects in the project
 ## Making a demonstration application of the system, your own application showing how the software is used
 

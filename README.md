@@ -7,7 +7,7 @@ Javascript and React. Yes, because React Native uses real native components and 
 **What build system is used? What build tools / environment are needed to build?**  
 You will need:  
 Node(8.3 or newer)  
-the React Native command line interface   
+the React Native command line interface     
 `npm install -g react-native-cli`    
 Python2(not support Python3 now)  
 JDK (edition 1.8 only) [JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)   
@@ -19,8 +19,11 @@ How are they ensuring the testing is meaningful? Do they have code coverage metr
 What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?    
 What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang
 ## Software Architecture
-### Software Architecture Diagram  
-![Architecture](https://github.com/ec500-software-engineering/case-study-JiaruiJin/blob/master/Structure.PNG)  
+![Architecture Diagram](https://github.com/ec500-software-engineering/case-study-JiaruiJin/blob/master/Structure.PNG)  
+### Java Layer 
+mainly contains some packaged functional modules like UIMangeger, Fresco, OkHttp and so on. The core .jar package is **react-native.jar** which packages plenty of interfaces of upper layer like Module, Registy, bridge and something else.
+### C++ Layer
+mainly in charge of the connection between Java and JavaScript as well as running JavaScript code. **JavaScriptCore** is pachaged in this layer which is used to process JS. Based on JavaScriptCore, developers can use **ES6** flexibly. **Bridge** contains the core ports for the communication between Java and JS.
 
 ## Analyze two defects in the project
 ## Making a demonstration application of the system, your own application showing how the software is used

@@ -24,6 +24,8 @@ What computing platform combinations are tested on their CI? E.g. Windows 10, Cy
 mainly contains some packaged functional modules like UIMangeger, Fresco, OkHttp and so on. The core .jar package is **react-native.jar** which packages plenty of interfaces of upper layer like Module, Registy, bridge and something else.
 ### C++ Layer
 mainly in charge of the connection between Java and JavaScript as well as running JavaScript code. **JavaScriptCore** is pachaged in this layer which is used to process JS. Based on JavaScriptCore, developers can use **ES6** flexibly. **Bridge** contains the core ports for the communication between Java and JS.
+### JavaScript Layer
+provides various components and toolboxes for developers to use. One this layer, components and module are built on virtual DOM which is written in JS. By using different Renger Engine, we can develope the UI on different platforms.
 
 ## Analyze two defects in the project
 ## Making a demonstration application of the system, your own application showing how the software is used

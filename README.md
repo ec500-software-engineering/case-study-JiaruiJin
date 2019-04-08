@@ -27,9 +27,11 @@ Then all ibraries with native dependencies should be successfully linked to your
 ## Testing: describe unit/integration/module tests and the test framework
 How are they ensuring the testing is meaningful? Do they have code coverage metrics for example?  
 What CI platform(s) are they using (e.g. Travis-CI, AppVeyor)?    
-What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang
-They mainly use CircleCI as their CI platform just as shown in the figure below.
+What computing platform combinations are tested on their CI? E.g. Windows 10, Cygwin, Linux, Mac, GCC, Clang  
+They mainly use CircleCI as their CI platform just as shown in the figure below.  
+**How CircleCI works:**  Every time a developer commit code, it will create a build and autoatically runs the build in a clean container or virtual machine to do the testing job. If the build fails, the developer will receive a notification to fix it. If the build passes, it will be deployed to various environments to accelarate the product going to market faster.
 ![CircleCI](https://github.com/ec500-software-engineering/case-study-JiaruiJin/blob/master/CircleCI.PNG)
+
 ## Software Architecture
 ![Architecture Diagram](https://github.com/ec500-software-engineering/case-study-JiaruiJin/blob/master/Structure.PNG)  
 ### Java Layer 

@@ -53,7 +53,15 @@ mainly in charge of the connection between Java and JavaScript as well as runnin
 provides various components and toolboxes for developers to use. One this layer, components and module are built on virtual DOM which is written in JS. By using different Renger Engine, we can develope the UI on different platforms.
 
 ## Analyze two defects in the project  
-
+### [The development server returned response error: 500](https://github.com/facebook/react-native/issues/24112)
+During learning how to use React Native, I met this problem when I ran `react-native run android`.So I searched for some possible solutions to this problem. One issue is to reduce the version of React Native by using **npm **  
+`$ npm uninstall --save-dev babel-preset-react-native `  
+`$ npm install babel-preset-react-native@2.1.0`  
+The other issue is by using  
+`$ npm start --reset-cache`
+### [undefined is not an object(evaluating NativeModuels.UIManager.RCTVideo.Constants')](https://github.com/react-native-community/react-native-video/issues/272)  
+This problem occurs when I want to use **react-native-video**. And I found that we need to add videopackage() in mainactivity by  
+`react-native link` 
 ## Making a demonstration application of the system, your own application showing how the software is used
 To have a better understanding of how to use React Native, I just build a simple application which shows two pictures from the URL provided.
 ### Environment

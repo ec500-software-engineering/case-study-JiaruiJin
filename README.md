@@ -76,5 +76,9 @@ Download the package -> cd to the file path -> running 'npm start'
 ### UI
 ![UI](https://github.com/ec500-software-engineering/case-study-JiaruiJin/blob/master/Screenshot%20.png)
 
+## Some other thoughts about case study  
+This is a good chance for me to learn how the software on market are built and how do they maintain and update their product.  
+About React Native, I also tried to run the demo which is written in a Macbook (my laptop is windows). And it can also work perfectly  
+on my computer, which proves the advantage of React Native that allows us to develope app on different platforms. That's really awesome!
 
 

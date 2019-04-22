@@ -54,7 +54,7 @@ provides various components and toolboxes for developers to use. One this layer,
 
 ## Analyze two defects in the project  
 ### [The development server returned response error: 500](https://github.com/facebook/react-native/issues/24112)
-During learning how to use React Native, I met this problem when I ran `react-native run android`.So I searched for some possible solutions to this problem. One issue is to reduce the version of React Native by using **npm **  
+During learning how to use React Native, I met this problem when I ran `react-native run-android`.So I searched for some possible solutions to this problem. One issue is to reduce the version of React Native by using **npm **  
 `$ npm uninstall --save-dev babel-preset-react-native `  
 `$ npm install babel-preset-react-native@2.1.0`  
 The other issue is by using  
